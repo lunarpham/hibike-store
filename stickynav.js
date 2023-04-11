@@ -15,10 +15,11 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "0px 50px";
-    document.getElementById("logo").style.fill = "white";
+    document.getElementById("nav-content").style.padding = "0px 60px";
+    document.getElementById("logo-white").style.visibility = "visible";
   } else {
-    document.getElementById("navbar").style.padding = "0px 0px";
+    document.getElementById("nav-content").style.padding = "0px 0px";
+    document.getElementById("logo-white").style.visibility = "hidden";
   }
 }
 

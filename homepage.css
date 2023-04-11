@@ -32,11 +32,23 @@ body {
     color: #1e1a1c;
 }
 
-.logo {
+.logo img {
     width: 32px;
     padding-left: 5px;
 }
 
+.logo-white img {
+    width: 32px;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.logo-white {
+    padding-top: 7px;
+    position: absolute;
+    visibility: hidden;
+    transition: 0.2sf;
+}
 
 .text-logo {
     color:#1e1a1c;
@@ -59,7 +71,6 @@ body {
     height: 20%;
     align-items: center;
     padding-left: 10px;
-
 }
 
 .right-icons {
@@ -67,13 +78,17 @@ body {
 }
 
 nav {
+    display: flex;
+    align-items: center;
     position:sticky;
     top: 0px;
     overflow:hidden ;
     background-color:#e1a74ae6;
     height: 50%;
-    max-height: 50%;
-    align-items: center;
+    max-height: 50%
+}
+
+.nav-content {
     transition: 0.2s
 }
 
@@ -114,6 +129,11 @@ nav a:hover {
     transition-timing-function: linear;
 }
 
+.nav-content {
+    display: flex;
+    align-items: center;
+}
+
 .lorem {
     margin: 15px
 }
@@ -140,6 +160,50 @@ nav a:hover {
     background-repeat: no-repeat;
     background-position:top;
 }
+
+#slide-3 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgb(31, 121, 199)),url("slide images/slide-3.png");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
 
 .sponsors {
     width: 100%;
@@ -231,13 +295,13 @@ nav a:hover {
     size: 20vw;
     font-size: 1sw;
     align-items: center;
+    background-repeat: no-repeat;
 }
 
 .product-container:hover {
     transition: all .5s;
     transform: scale(1.2);
 }
-
 
 .product-container#guitars {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgb(0, 0, 0)), url("products/guitars.jpg");
@@ -264,7 +328,8 @@ nav a:hover {
 }
 
 .product-container h2 {
-    padding-top: 25%;
+    padding-top: 15%;
+    padding-bottom: 15%;
 }
 
 .row {
@@ -292,10 +357,77 @@ nav a:hover {
     right:16px;
 }
 
-.product-container img:hover {
-    transform: scale(1.2);
+.rev-block#rev-block1::after {
+    content: '';
+    top:115px;
+    left:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgb(31, 121, 199);
+    animation: rev-block1 1.5s cubic-bezier(0.19,1,0.22,1) forwards;
 }
 
-.product-container  {
-    position: relative;
+@keyframes rev-block1 {
+    0% {
+        left: 0;
+        width: 0%;
+    }
+
+    50% {
+        left:0;
+        width: 100%;
+    }
+
+    100%  {
+        left: 100%;
+        width: 0%;
+    }
 }
+
+
+.rev-block#rev-block2::after {
+    content: '';
+    top:115px;
+    left:0;
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    background:rgb(255, 255, 255);
+    animation: rev-block2 1.5s cubic-bezier(0.19,1,0.22,1) forwards;
+}
+
+@keyframes rev-block2 {
+    0% {
+        left: 0;
+        width: 100%;
+    }
+
+    50% {
+        left:0;
+        width: 100%;
+    }
+
+    100%  {
+        left: 100%;
+        width: 0%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .introduct {
+        white-space: nowrap;
+        width:20px;
+        visibility: collapse;
+    }
+
+}
+
+
+@media screen and (max-width:397px) {
+    nav a {
+        font-size: 3vw;
+    }
+}
+

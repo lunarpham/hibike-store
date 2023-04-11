@@ -2,11 +2,147 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Hibike Official Store</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="header">
+        <div class="title">
+            <a class="intro" href="homepage.html">
+                <div class="logo">
+                    <img src="logo/logo.svg" alt="logo">
+                </div>
+                <div class="text-logo">
+                    <h1>Hibike</h1>
+                </div>
+            </a>
+            <div class="introduct">
+                <h2>Authorized reseller | Most popular musical instrument stores among anime lovers in SEA</h2>
+            </div>
+            <div class="right-header">
+                <div class="right-icons">
+                    <div class="icon1"><img src="icon\title\map-pin.svg"></div>
+                    <div class="icon2"><img src="icon\title\shopping-bag.svg"></div>
+                    <div class="icon3"><img src="icon\title\user.svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav id="navbar">
+        <div class="logo-white"><img id="logo-white" src="logo/logo-white.svg" alt=""></div>
+        <div class="nav-content" id="nav-content">
+            <a class="home" href="homepage.html"><h2>Home</h2></a>
+            <a class="products" href="products.html"><h2>Products</h2></a>
+            <!--<button class="products" href="products.html"><h2>Products</h2></button>
+            <div class="dropdown-items">
+                <a href="#guitars/basses">Guitar</a>
+                <a href="#piano">Piano</a>
+                <a href="#strings">Strings</a>
+                <a href="#brass">Brass</a>
+                <a href="#guitars/basses">Winds</a>
+            </div>!-->
+            <a class="about" href="aboutus.html"><h2>About us</h2></a>
+            <a class="contact" href="contactus.html"><h2>Contact us</h2></a>
+        </div>
+    </nav>
+    <div class="rev-block" id="rev-block2"></div>
+    <div class="rev-block" id="rev-block1"></div>
+
+    <div id="carousel">
+        <div class="image-container">
+
+
+            <div class="slide-image" id="slide-1"> <!--Euphonium!-->
+                <div class="text-on-image">
+                    <h1>THE WAY YOU SOUND IT - HIBIKE!</h1>
+                    <button class="about-us-button"><a class="what-does-it-mean" href="aboutus.html"><h1>WHAT DOES IT MEAN?</h1></a></button>
+                </div>
+            </div>
+            <div class="slide-image" id="slide-2"> <!--K-On!-->
+                <div class="text-on-image">
+                    <h1>THE WAY YOU SOUND IT - HIBIKE!</h1>
+                    <button class="about-us-button"><a class="what-does-it-mean" href="aboutus.html"><h1>WHAT DOES IT MEAN?</h1></a></button>
+                </div>
+            </div>
+            <div class="slide-image" id="slide-3"> <!--Bocchi The Rock!-->
+                <div class="text-on-image">
+                    <h1>THE WAY YOU SOUND IT - HIBIKE!</h1>
+                    <button class="about-us-button"><a class="what-does-it-mean" href="aboutus.html"><h1>WHAT DOES IT MEAN?</h1></a></button>
+                </div>
+            </div>
+
+            <!--<a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>!-->
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+              
+    </div> 
+
+    <div class="sponsors">
+        <div class="logo-sponsors-container">
+            <img class="logo-sponsors" id="yamaha" src="sponsors logo/svg/yamaha_white.svg">
+            <img class="logo-sponsors" id="epiphone" src="sponsors logo/svg/epiphone_white.svg">
+            <img class="logo-sponsors" id="steinberg" src="sponsors logo/svg/steinberg_white.svg">
+            <img class="logo-sponsors" id="marshall" src="sponsors logo/svg/marshall_white.svg">
+
+        </div>
+        <div class="description">
+            <br><h2>Hibike is the leading musical instrument reseller in S.E.A and Hong Kong/Taiwan with more than 18 stores in 13 countries/regions.
+            <h2>We stock a high-quality range of modern Musical Instruments and Accessories from all your favorite music anime titles.</h2>
+            <h2>Our products are all covered in our warranty program.</h2>
+        </div>
+    </div>
+    </div> 
     
+
+    <div class="products">
+        <div class="products-label">
+            <div class="label-container">
+                <h1>-OUR PRODUCTS-</h1>
+            </div>
+        </div>
+        <div class="products-category">
+            <div class="products-items">
+                <div class="row" id="row1">
+                    <div class="parent"><div class="product-container" id="guitars"><a href="products.html#guitars"><h2>Guitars, Basses, Amps</h2></a></div></div>
+                    <div class="parent"><div class="product-container" id="drums"><a href="products.html#drums"><h2>Drums</h2></a></div></div>
+                    <div class="parent"><div class="product-container" id="keyboards"><a href="products.html#keyboards"><h2>Keyboards</h2></a></div></div>
+                </div>
+                <div class="row" id="row2">
+                    <div class="parent"><div class="product-container" id="pianos"><a href="products.html#pianos"><h2>Pianos</h2></a></div></div>
+                    <div class="parent"><div class="product-container" id="strings"><a href="products.html#strings"><h2>Strings</h2></a></div></div>
+                    <div class="parent"><div class="product-container" id="winds"><a href="products.html#winds"><h2>Winds</h2></a></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="featuring">
+        <div class="products-label">
+            <div class="label-container">
+                <h1>-FEATURING PRODUCTS FROM YOUR FAVOURITE ANIME-</h1>
+            </div>
+        </div>
+        <div class="featuring-products">
+            <div class="anime-products" id="yui-keion">
+                <img src="slide images/yui.png" alt="">
+                <div class="text-on-products">
+                    <h1>Gibson</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    <script src="stickynav.js"></script>
+    <script src="slide.js"></script>
 </body>
 </html>
