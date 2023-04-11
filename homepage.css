@@ -1,0 +1,73 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    text-shadow: none;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+body {
+    margin: 0;
+    font-family: "Teko";
+    color: #505050;
+    text-shadow: none;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.897), rgba(255, 255, 255, 0.897)),url("background.svg");
+    background-size: 30%;
+    background-position-y: calc(100px);
+}
+.logo {
+    width: 35px;
+    padding-left: 5px;
+}
+
+.header {
+    display: flex;    
+    list-style: none;
+    justify-content:space-between;
+    background-color: white;
+    height: fit-content;
+    text-align:center ;
+}
+
+.title {
+    display: flex;
+    padding: 15px ;
+}
+
+.text-logo {
+    font-size: 30px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    color: #505050;
+}
+
+.right-icons {
+    display: flex;
+}
+
+.right-icons > * {
+    padding-right: 15px;
+}
+
+nav {
+    overflow: hidden ;
+    background-color:#e1a74ae6;
+}
+
+nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 0px 15px;
+    text-transform: uppercase;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
