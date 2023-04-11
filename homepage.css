@@ -7,67 +7,295 @@ h2 {
     text-shadow: none;
     text-decoration: none;
     font-weight: 200;
+    margin: 0;
+}
+
+h1 {
+    text-shadow: none;
+    text-decoration: none;
+    font-weight: 200;
+    color: #1e1a1c;
+    margin: 0;
 }
 
 body {
     margin: 0;
     font-family: "Teko";
-    color: #505050;
+    color: #1e1a1c;
     text-shadow: none;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.897), rgba(255, 255, 255, 0.897)),url("background.svg");
     background-size: 30%;
     background-position-y: calc(100px);
 }
+
+.title h2 {
+    color: #1e1a1c;
+}
+
 .logo {
-    width: 35px;
+    width: 32px;
     padding-left: 5px;
 }
 
-.header {
-    display: flex;    
-    list-style: none;
-    justify-content:space-between;
-    background-color: white;
-    height: fit-content;
-    text-align:center ;
+
+.text-logo {
+    color:#1e1a1c;
+    text-transform: uppercase;
+    padding-left: 10px;
 }
 
 .title {
+    position: relative;
     display: flex;
-    padding: 15px ;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding-top: 8px;
+    padding-bottom: 5px ;
 }
 
-.text-logo {
-    font-size: 30px;
+.intro {
+    display: flex;
+    height: 20%;
+    align-items: center;
     padding-left: 10px;
-    text-transform: uppercase;
-    color: #505050;
+
 }
 
 .right-icons {
     display: flex;
 }
 
-.right-icons > * {
-    padding-right: 15px;
-}
-
 nav {
-    overflow: hidden ;
+    position:sticky;
+    top: 0px;
+    overflow:hidden ;
     background-color:#e1a74ae6;
+    height: 50%;
+    max-height: 50%;
+    align-items: center;
+    transition: 0.2s
 }
 
 nav a {
     float: left;
     display: block;
     text-align: center;
-    padding: 0px 15px;
+    padding:0px 15px;
     text-transform: uppercase;
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+nav a:hover {
+    background-color: rgb(31, 121, 199);
 }
 
 .sticky {
     position: fixed;
     width: 100%;
     top: 0;
+    height: 52px;
+    transition: right 0.3s ease 0s;
 }
 
+.header {
+    display: block;
+}
+
+.right-icons div{
+    padding-right: 10px;
+}
+
+.nav-content div {
+    padding-left: 0;
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+
+.lorem {
+    margin: 15px
+}
+
+.slide-show {
+    max-width: 100%;
+    height: auto;
+}
+
+#slide-1 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgb(31, 121, 199)),url("slide images/slide-1.png");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+#slide-2 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgb(31, 121, 199)),url("slide images/slide-2.png");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+.sponsors {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(31, 121, 199);
+}
+
+.logo-sponsors {
+    height: 40px;
+    padding-top: 30px; 
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo-sponsors-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.text-on-image {
+    padding-top: 25%;
+    padding-left: 50px;
+    font-size:180%;
+    margin: 0;
+}
+
+.text-on-image h1 {
+    color:white;
+    text-shadow:#1e1a1c;
+    margin: 0;
+}
+
+.about-us-button {
+    background-color: transparent;
+    border-color: white;
+    border-style:solid;
+    padding: 10px 30px 10px 30px;
+    font-family: "Teko";
+    letter-spacing: 2px;
+    border-radius: 30px;
+}
+
+.about-us-button:hover {
+    background-color: #e1a74ae6;
+}
+
+.description h2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+
+.products-label {
+    padding: 15px;
+    display: flex;
+    justify-content: center ;
+}
+
+.label-container {
+    display: block;
+    background-color: #e1a74ad7;
+    width: fit-content;
+    padding: 5px 20px 0px 20px;
+}
+
+.label-container h1 {
+    color:#1e1a1c;
+    font-size:2vw;
+}
+
+.parent {
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px;
+    width: 25%;
+    height: 50%;
+    max-height: 50%;
+}
+
+.product-container {
+    display: block;
+    background-color:#e1a74ad7;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-position: bottom;
+    size: 20vw;
+    font-size: 1sw;
+    align-items: center;
+}
+
+.product-container:hover {
+    transition: all .5s;
+    transform: scale(1.2);
+}
+
+
+.product-container#guitars {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgb(0, 0, 0)), url("products/guitars.jpg");
+}
+
+.product-container#drums {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgb(0, 0, 0)), url("products/drums.jpg")
+}
+
+.product-container#keyboards {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgb(0, 0, 0)), url("products/keyboards.jpg")
+}
+
+.product-container#pianos {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgb(0, 0, 0)), url("products/pianos.jpg")
+}
+
+.product-container#strings {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgb(0, 0, 0)), url("products/strings.jpg")
+}
+
+.product-container#winds {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgb(0, 0, 0)), url("products/winds.jpg")
+}
+
+.product-container h2 {
+    padding-top: 25%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.featuring-products{
+    display: flex;
+    justify-content: center;
+}
+
+.anime-products {
+    width: 80%;
+    text-align: center;
+}
+
+.anime-products img {
+    width: 100%;
+}
+
+.text-on-products {
+    position: relative;
+    top:8px;
+    right:16px;
+}
+
+.product-container img:hover {
+    transform: scale(1.2);
+}
+
+.product-container  {
+    position: relative;
+}
