@@ -1,1 +1,26 @@
-<script id="replace_with_navbar" src="nav.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div class="header" id="header"></div>
+    <nav id="navbar"></nav>
+    
+    <script src="stickynav.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("header.html");
+          $("#navbar").load("navbar.html");
+        });
+    </script>
+    
+</body>
+</html>

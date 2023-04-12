@@ -85,7 +85,6 @@ nav {
     overflow:hidden ;
     background-color:#e09f36e6;
     height: 50%;
-    max-height: 50%
 }
 
 .nav-content {
@@ -413,6 +412,13 @@ background-color: rgba(0,0,0,0.8);
         width: 0%;
     }
 }
+
+footer {
+    position: absolute;
+    background-color:rgb(31, 121, 199);
+    width: 100%;
+}
+
 
 @media screen and (max-width:1000px) {
 

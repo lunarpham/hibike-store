@@ -8,47 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="title">
-            <a class="intro" href="homepage.html">
-                <div class="logo">
-                    <img src="logo/logo.svg" alt="logo">
-                </div>
-                <div class="text-logo">
-                    <h1>Hibike</h1>
-                </div>
-            </a>
-            <div class="introduct">
-                <h2>Authorized reseller | Most popular musical instrument stores among anime lovers in SEA</h2>
-            </div>
-            <div class="right-header">
-                <div class="right-icons">
-                    <div class="icon1"><img src="icon\title\map-pin.svg"></div>
-                    <div class="icon2"><img src="icon\title\shopping-bag.svg"></div>
-                    <div class="icon3"><img src="icon\title\user.svg"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <nav id="navbar">
-        <div class="logo-white"><img id="logo-white" src="logo/logo-white.svg" alt=""></div>
-        <div class="nav-content" id="nav-content">
-            <a class="home" href="homepage.html"><h2>Home</h2></a>
-            <a class="products" href="products.html"><h2>Products</h2>
-                <a href="#guitars/basses"><h2>Guitar, Basses, Amp</h2></a>
-                <a href="#piano"><h2>Drums</h2></a>
-                <a href="#strings"><h2>Keyboards</h2></a>
-                <a href="#brass"><h2>Strings</h2></a>
-                <a href="#guitars/basses">Winds</a>
-            </a>
-                
-            </div>!-->
-            <a class="about" href="aboutus.html"><h2>About us</h2></a>
-            <a class="contact" href="contactus.html"><h2>Contact us</h2></a>
-        </div>
-    </nav>
+    <div class="header" id="header"></div>
+    <nav id="navbar"></nav>
+    
     <div class="rev-block" id="rev-block2"></div>
     <div class="rev-block" id="rev-block1"></div>
 
@@ -140,9 +105,20 @@
             </div>
         </div>
     </div>
+
+
+    <footer>
+        This is footer
+    </footer>
    
     
     <script src="stickynav.js"></script>
     <script src="slide.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("header.html");
+          $("#navbar").load("navbar.html");
+        });
+    </script>
 </body>
 </html>
