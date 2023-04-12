@@ -14,7 +14,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
     document.getElementById("nav-content").style.padding = "0px 60px";
     document.getElementById("logo-white").style.visibility = "visible";
   } else {
