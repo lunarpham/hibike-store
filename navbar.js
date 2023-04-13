@@ -1,16 +1,5 @@
-/*window.onscroll = function() {myFunction()};
 
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-        if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-        } else {
-        navbar.classList.remove("sticky");
-            }
-        }*/
-
+//Move navbar content to right when scrolling
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -23,6 +12,11 @@ function scrollFunction() {
   }
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+
+//Keep navbar and header in every page using jQuery
+$(function(){
+  $("#header").load("components/header.html");
+  $("#navbar").load("components/navbar.html");
+  $("footer").load("components/footer.html");
+});
+

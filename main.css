@@ -3,7 +3,7 @@ a {
     color: white;
 }
 
-h2 {
+h2,h3 {
     text-shadow: none;
     text-decoration: none;
     font-weight: 200;
@@ -85,6 +85,7 @@ nav {
     overflow:hidden ;
     background-color:#e09f36e6;
     height: 50%;
+    z-index: 1;
 }
 
 .nav-content {
@@ -282,6 +283,7 @@ background-color: rgba(0,0,0,0.8);
     width: 25%;
     height: 50%;
     max-height: 50%;
+    position:static;
 }
 
 .product-container {
@@ -300,6 +302,7 @@ background-color: rgba(0,0,0,0.8);
 .product-container:hover {
     transition: all .5s;
     transform: scale(1.2);
+
 }
 
 .product-container#guitars {
@@ -373,7 +376,7 @@ background-color: rgba(0,0,0,0.8);
         width: 0%;
     }
 
-    50% {
+    65% {
         left:0;
         width: 100%;
     }
@@ -402,7 +405,7 @@ background-color: rgba(0,0,0,0.8);
         width: 100%;
     }
 
-    50% {
+    65% {
         left:0;
         width: 100%;
     }
@@ -415,10 +418,53 @@ background-color: rgba(0,0,0,0.8);
 
 footer {
     position: absolute;
-    background-color:rgb(31, 121, 199);
+    background-color:rgb(255, 255, 255);
     width: 100%;
+    padding: 15px 0px 15px 0px;
 }
 
+footer a h2 {
+    color: #1e1a1c;
+}
+
+footer a h3 {
+    color: rgb(31, 121, 199) ;
+}
+
+#column-1 {
+    float: left;
+}
+
+#column-2 {
+    float: right;
+    padding-right: 15px;
+}
+
+.footer-services .row{
+    display: flex;
+    justify-content: left;
+}
+
+.footer-services #row-1 a {
+    padding: 0px 15px 0px 15px
+}
+
+.footer-services #row-2 a {
+    padding: 0px 0px 0px 15px
+}
+
+.social-links img {
+    width: 30px;
+}
+
+.social-links .row {
+    display: flex;
+    justify-content: right;
+}
+
+.social-links #row-1 a {
+    padding-left: 5px;
+}
 
 @media screen and (max-width:1000px) {
 
