@@ -17,6 +17,6 @@ function scrollFunction() {
 $(function(){
   $("#header").load("components/header.html");
   $("#navbar").load("components/navbar.html");
-  $("footer").load("components/footer.html");
+  $("#footer").load("components/footer.html");
 });
 
