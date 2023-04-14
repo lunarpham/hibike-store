@@ -1,0 +1,25 @@
+.contact-title {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.form-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input {
+    margin:5px;
+    width:500px;
+    padding: 10px;
+    border-radius: 0;
+    border-style: solid;
+    outline-style: hidden;
+}
