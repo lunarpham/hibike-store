@@ -6,6 +6,8 @@
     <title>Hibike Official Store</title>
     <link rel="icon" href="logo/logo-white.svg">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="featured.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400&display=swap" rel="stylesheet">
@@ -97,29 +99,185 @@
                 <h1>-FEATURING PRODUCTS FROM YOUR FAVOURITE ANIME-</h1>
             </div>
         </div>
-        <div class="product-intro">
-            <h2>Hibike is place where you can find musical instruments from your favorite anime titles.</h2>
-            <h2>After the vote for favorite music anime titles and their characters hosted on our Facebook page. Here are the top 3 characters that are honored to be on our page.</h2>
+        <span class="product-intro">
+            <figure><img src="banner/banner.png" alt=""></figure>
+         
+            <p><h2>Hibike is place where you can find musical instruments from your favorite anime titles.
+            Some of the best loved anime series have revolved around musical performance,
+            but have any of them ever made you want to learn to play an instrument yourself? 
+            In honor of musical instrument day in 2023, Hibike Store held an annual survey to find out
+            which instruments fans most wished they could play after seeing anime
+            heroines having so much fun. Things seem to be exciting that this year's result is significantly
+            different from last year that gave us and our customer big surprises of how it changed across time.
+            Let's dig in to find out which instrument your beloved characters is playing. The below slideshow will
+            present our top 3 anime musical instruments this year.
+        </h2></p>
 
-        </div>
+            </span>
         <div class="featuring-products">
-            <div class="anime-products" id="yui-keion">
-                <div class="text-on-products">
-                    <h2>Electric Guitar</h2>
-                    <h1>PACIFICA series</h1>
-                    <p><h2>This is the electric guitar that Hitori "Bocchi" Gotoh played at the end of episode 12 of TV series anime "Bocchi The Rock!"
-                    Her previous guitar is a Gibson Les Paul borrowing from her father. However, its first string was broken during the performance in her school's festival.</h2>
+            <div style="text-align:center">
+                <span class="char-dot" onclick="currentSlide2(1)"><img src="thumbnails/bocchi.png" alt=""></span> 
+                <span class="char-dot" onclick="currentSlide2(2)"><img src="thumbnails/yui.png" alt=""></span> 
+                <span class="char-dot" onclick="currentSlide2(3)"><img src="thumbnails/kumiko.png" alt=""></span> 
+            </div>
+            <div class="anime-products" id="bocchi">
+                <div class="character-image">
+                    <img src="featured/bocchi-3.png" alt="">
+                </div>
+                <div class="detail-box">
+                    <div class="label-container"><h2 class="instrument-type">#1 Electric Guitar</h2></div>
+                    <h1 class="instrument-title">YAMAHA PACIFICA series</h1>
+                    <p><h2>
+                    The most favorite one is an Electric Guitar used by Hitori "Bocchi" Gotoh (Kessoku Band)
+                    from TV series anime "Bocchi The Rock!" (Onair 2022).
+                    This is a high quality model for a wide range of genres, generously infused with ideas 
+                    and technologies developed over 50 years of Yamaha guitar history.
+                    Bocchi uses a PAC600series PACIFICA611VFM model that has been custom-made and customized.
+                    Her previous guitar is a Gibson Les Paul borrowing from her father.
+                    However, its first string was broken during the performance in her school's festival.
+                    After the incident, she decided to buy a new guitar to avoid causing any trouble like that
+                    to her father's guitar.
+                    </h2>
                     </p>
+                    <div class="label-container"><h2>Recommended Products</h2></div>
+                    
+                    <ul class="product-images">
+                        <li class="recomment-products">
+                            <a class="product-box" id="pac600" href="products.html">
+                                <div class="detail-text">
+                                    <h2>PAC600series</h2>
+                                    <h3>Start from $700</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="recomment-products">
+                            <a class="product-box" id="pac300" href="products.html">
+                                <div class="detail-text">
+                                    <h2>PAC300series</h2>
+                                    <h3>Start from $500</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="recomment-products">
+                            <a class="product-box" id="pac200" href="products.html">
+                                <div class="detail-text">
+                                    <h2>PAC200series</h2>
+                                    <h3>Start from $400</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+            <div class="anime-products" id="yui">
+                <div class="character-image">
+                    <img src="featured/yui-3.png" alt="">
+                </div>
+                <div class="detail-box">
+                    <div class="label-container"><h2 class="instrument-type">#2 Electric Guitar</h2></div>
+                    <h1 class="instrument-title">Gibson Pre-'08 Les Paul Standard</h1>
+                    <p><h2>
+                        The second one is a Gibson Pre-'08 Les Paul Standard '50s in Heritage Cherry Sunburst
+                        used by Yui Hirasawa in "K-On!" series.
+                        She names it Giita, which quite literally means "guitar". In 2008, Gibson gave the
+                        "Standard" name to a new design of Les Paul, while the old Standard was renamed
+                        the Traditional; worth noting because the manga started in 2007. She uses D'Addario
+                        EXL145 strings on it, oddly heavy strings for her and the music she plays. Of course,
+                        being Yui, she likely has no idea there are different sizes of strings, as she didn't
+                        even know they had to be changed at first. In the manga, its pickup selector switch is
+                        always set to the "Treble" position, which is usually well suited for lead guitar. In the anime, it's always set to the middle
+                        position, which uses both pickups, giving a more full sound, well suited for the low,
+                        Power Chord-heavy riffs Yui tends to play.
+                    </h2>
+                    </p>
+                    <div class="label-container"><h2>Recommended Products</h2></div>
+                    
+                    <ul class="product-images">
+                        <li class="recomment-products">
+                            <a class="product-box" id="lpclassic" href="products.html">
+                                <div class="detail-text">
+                                    <h2>Les Paul Classic</h2>
+                                    <h3>Start from $600</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="recomment-products">
+                            <a class="product-box" id="lpstandard" href="products.html">
+                                <div class="detail-text">
+                                    <h2>Les Paul Standard</h2>
+                                    <h3>Start from $700</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="recomment-products">
+                            <a class="product-box" id="lpmodern" href="products.html">
+                                <div class="detail-text">
+                                    <h2>Les Paul Modern</h2>
+                                    <h3>Start from $700</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="anime-products" id="kumiko">
+                <div class="character-image">
+                    <img src="featured/kumiko-3.png" alt="">
+                </div>
+                <div class="detail-box">
+                    <div class="label-container"><h2 class="instrument-type">#3 Euphonium</h2></div>
+                    <h1 class="instrument-title">YAMAHA YEP-621</h1>
+                    <p><h2>
+                        The third one is YAMAHA YEP-621 - an Euphonium played by main character of anime Sound! Euphonium (Onair 2015), Kumiko Oumae.
+                        Euphonium is a member of the brass family and the titular instrument of Sound! Euphonium. In addition, the anime title is inspiration
+                        of our store name (Hibike! Euphonium) since it's our favorite music anime in 2010s after K-On! series.
+                        The euphonium is used in symphonies, orchestras, school bands, and marching bands. It can be played in either bass or treble clef,
+                        with the bass clef written in concert pitch as a C instrument, and the treble clef being written in B♭ sounding a major ninth,
+                        which is an octave plus a whole step, lower than written. This change in clef does not affect the way the instrument sounds,
+                        it is simply different between sheet music. It is a non-transposing instrument known for its distinctive tone color,
+                        wide range, a variety of character and agility.
+                    </h2>
+                    </p>
+                    <div class="label-container"><h2>Recommended Products</h2></div>
+                    
+                    <ul class="product-images">
+                        <li class="recomment-products">
+                            <a class="product-box" id="yep621" href="products.html">
+                                <div class="detail-text">
+                                    <h2>YEP 621</h2>
+                                    <h3>Start from $2000</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="recomment-products">
+                            <a class="product-box" id="yep642" href="products.html">
+                                <div class="detail-text">
+                                    <h2>YEP 642</h2>
+                                    <h3>Start from $2500</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="recomment-products">
+                            <a class="product-box" id="yep321" href="products.html">
+                                <div class="detail-text">
+                                    <h2>YEP 321</h2>
+                                    <h3>Start from $700</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                    
+            </div>
+                <a class="char-prev" onclick="plusSlides2(-1)">❮</a>
+                <a class="char-next" onclick="plusSlides2(1)">❯</a>
+            </div>
+            <br>
         </div>
     </div>
-
-
-    <div id = "footer">
-
-    </div>
-   
+    
     <script src="slideshow.js"></script>
+    <script src="featured.js"></script>
 </body>
+<footer></footer>
 </html>

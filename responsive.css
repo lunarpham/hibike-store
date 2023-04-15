@@ -1,0 +1,193 @@
+@media screen and (max-width:1000px) {
+    .anime-products {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .character-image {
+        width: 100%;
+    }
+    
+
+    .detail-box {
+        padding:2%;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:950px) {
+
+    .introduct {
+        white-space: nowrap;
+        width:20px;
+        visibility: collapse;
+    }
+
+    .text-on-image {
+        font-size: medium;
+    }
+
+    .about-us-button {
+        padding: 5px 15px 5px 15px;
+    }
+
+    .about-us-button a h1 {
+        font-size:25px;
+    }
+
+    .description h2 {
+        font-size: 20px;
+    }
+
+    .parent {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:770px) {
+    .description h2 {
+        font-size: 16px;
+    }
+
+    .logo-sponsors {
+        height: 30px;
+    }
+}
+
+
+@media screen and (max-width:397px) {
+    nav a {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:625px) {
+    .description h2 {
+        font-size: 13px;
+    }
+
+    .text-on-image {
+        font-size: small;
+    }
+
+    .about-us-button {
+        padding: 5px 15px 5px 15px;
+    }
+
+    .about-us-button a h1 {
+        font-size:15px;
+    }
+
+    .sponsors {
+        height: 165px;
+    }
+
+    .label-container {
+        padding: 3px 10px 0px 10px;
+    }
+
+    .label-container h1 {
+        font-size:x-large;
+    }
+
+    .product-container a h1 {
+        font-size: x-large;
+    }
+
+    #footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #column-1 {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    
+    #column-2 {
+        display: flex;
+        justify-content: center;
+        padding-right: 0px;
+    }
+    
+    .footer-services .footer-row {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-services #row-1 a {
+        padding: 0px 10px 0px 10px;
+    }
+    .footer-services #row-2 a {
+        padding: 0px 5px 0px 5px;
+    }
+    
+    .social-links .footer-row {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:414px) {
+    .nav-content li {
+        padding: 12px 0px 10px 5px;
+    }
+
+    .label-container h1 {
+        font-size: large;
+    }
+
+    .parent {
+        margin: 1px;
+    }
+
+    .logo-sponsors {
+        height: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .description h2 {
+        font-size: 0.6rem;
+    }
+
+    .sponsors {
+        height: 130px;
+    }
+
+    .text-on-image {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+
+    .product-intro h2 {
+        font-size: 0.7rem;
+    }
+
+    .char-dot {
+        margin: 5px;
+    }
+
+    .char-prev, .char-next {
+
+        font-size: 20px;
+        top:0px;
+        padding:10px
+    }
+
+    .detail-box h1 {
+        font-size: 2.2rem;
+        line-height: 1.5;
+    }
+
+    .detail-box h2 {
+        font-size: 0.7rem;
+    }
+}
+
