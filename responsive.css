@@ -95,7 +95,7 @@
         font-size: x-large;
     }
 
-    #footer {
+    footer {
         flex-direction: column;
         justify-content: center;
     }
@@ -130,9 +130,10 @@
 
 }
 
-@media screen and (max-width:414px) {
+@media screen and (max-width:415px) {
+
     .nav-content li {
-        padding: 12px 0px 10px 5px;
+        padding: 12px 5px 10px 5px;
     }
 
     .label-container h1 {
@@ -189,5 +190,20 @@
     .detail-box h2 {
         font-size: 0.7rem;
     }
+
+    .detail-box {
+        padding-left: 10%;
+        width: 80%;
+    }
+
+    .nav-content li {
+        font-size: 0.8rem;
+    }
+
+    .logo-white img {
+        height: 2rem;
+        padding-top: 0.1px;
+    }
+
 }
 
