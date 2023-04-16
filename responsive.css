@@ -171,7 +171,7 @@
 
 }
 
-@media screen and (max-width:514px) {
+@media screen and (max-width:520px) {
     .logo-sponsors {
         height: 25px;
         padding-left: 5px;
@@ -193,6 +193,9 @@
 }
 
 @media screen and (max-width:480px) {
+    .nav-content {
+        padding-left: 10px;
+    }
 
     .nav-content li {
         padding: 12px 5px 10px 5px;
@@ -265,11 +268,7 @@
 
 }
 
-@media screen and (max-width:380px) {
-
-    .nav-content li {
-        padding: 12px 2px 10px 2px;
-    }
+@media screen and (max-width:385px) {
 
     .label-container h1 {
         font-size: 0.9rem;
@@ -356,7 +355,9 @@
 
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:360px) {
+
+
     .logo-sponsors {
         height: 15px;
     }
