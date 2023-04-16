@@ -17,24 +17,71 @@
     <div class="header" id="header"></div>
     <nav id="navbar"></nav>
     <div class="contact-us">
-        <div class="contact-form">
-            <div class="contact-title">
-                <div class="label-container">
-                    <h1>CONTACT US</h1>
-                </div>
-            </div>
-            <div class="form-container">
-                <h2>Subcribe for notifications when there are available offers.</h2>
-                <form class="contact-form">
-                    <input type="text" id="first-name" placeholder="First Name">
-                    <input type="text" id="last-name" placeholder="Last Name">
-                    <input type="text" id="email" placeholder="Your Email">
-                    <input type="text" id="tel" placeholder="Your Phone Number">
-                    
-                </form>
-            </div>
-            
+        <div class="contact-container">
+            <br>
+            <ul class="bar-selection">                    
+                <li class="tab-button" onclick="switchTabs(tab, 'form-content')"><p>Form</p></li>
+                <li class="tab-button" onclick="switchTabs(tab, 'location-content')"><p>Location</p></li>
+            </ul>
 
+            <div id="form-content" class="tabcontent">
+                <form action="/action_page.php">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                
+                    <label for="lname">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+                
+                    <input type="submit" value="Submit">
+                  </form>
+            </div>
+
+            <div id="location-content" class="tabcontent" >
+                <ul class = "address">
+                    <li class="regions" id="indonesia">
+                        <div class="label-container"><h2>Indonesia</h2></div>
+                        <span class="adress-name"><h2>Grand Indonesia SEIBU 2nd Floor,
+                            JL. MH Thamrin, Gondangdia, Menteng, Jakarta, Indonesia</h2></span>
+                    </li>
+                    <li class="regions" id="malaysia">
+                        <div class="label-container"><h2>Malaysia</h2></div>
+                        <span class="adress-name"><h2>21st Floor, Petronas Twin Tower,
+                        Lower Ground (Concourse) Level,  Kuala Lumpur, Malaysia</h2></span>
+                    </li>
+                    <li class="regions" id="philippines">
+                        <div class="label-container"><h2>Philippines</h2></div>
+                        <span class="adress-name"><h2>68 Orchard Rd, Singapore 238839</h2></span>
+                    </li>
+                    <li class="regions" id="thailand">
+                        <div class="label-container"><h2>Thailand</h2></div>
+                        <span class="adress-name"><h2>111 Changwattana Road, Laksi, Bangkok, Thailand 10210-0299</h2></span>
+                        <span class="adress-name"><h2>3rd Floor, CentralWorld Plaza,Ratchadamri Road Pathum Wan, Pathum Wan, Bangkok 10330 Thailand</h2></span>
+                    </li>
+                    <li class="regions" id="vietnam">
+                        <div class="label-container"><h2>Vietnam</h2></div>
+                        <span class="adress-name"><h2>15th Floor,Nam A Bank Tower 201-203 Cach Mang Thang Tam St..,Ward 4,Dist. 3, Ho Chi Minh City,Vietnam</h2></span>
+                        <span class="adress-name"><h2>2nd Floor, 248 Luong The Vinh Tower, Trung Van District, Ha Noi, Vietnam</h2></span>
+                    </li>
+                    <li class="regions" id="hongkong">
+                        <div class="label-container"><h2>Hong Kong</h2></div>
+                        <span class="adress-name"><h2>Shop B23, Basement, Sino Center, 582-592 Nathan Road, Mong Kok, Hong Kong</h2></span>
+                    </li>
+                    <li class="regions" id="taiwan">
+                        <div class="label-container"><h2>Taiwan</h2></div>
+                        <span class="adress-name"><h2>3F, No. 134, Section 4, Roosevelt Road, Zhongzheng District, Taipei City, Taiwan</h2></span>
+                        <span class="adress-name"><h2>1AB, 2nd Floor, No. 566-5, Section 2, Wenxin Road, Xitun District, Taichung City, Taiwan</h2></span>
+                    </li>
+
+                </ul>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1zYdbD359mE_HBxRMTCBLaRzWmxk-izo&ehbc=2E312F"></iframe>
+                </div> 
+            </div>
         </div>
     </div>
 </body>

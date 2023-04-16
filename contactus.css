@@ -1,25 +1,133 @@
-.contact-title {
+.contact-us {
+    align-items: center;
     display: flex;
     justify-content: center;
-    padding: 15px;
+}
+
+.contact-container {
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+}
+
+.contact-container {
+    background-color: white;
+}
+
+.tabcontent {
+    display: block;
+}
+
+.bar-selection {
+    background-color:#e1a74ad7;
+    display: flex;
+    text-align: center;
+    justify-content:space-around;
+}
+
+.bar-selection li {
+    position: block;
+    display: inline-flex;
+    padding:2vh 2vh;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.bar-selection li p {
+    font-size: 3vw;
+    color: white;
+}
+
+label {
+    font-size: 2vw;
+}
+
+input[type=text], textarea {
+    font-size: 1vw;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    font-size: 1vw;
+    background-color:rgb(62, 165, 255);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .form-container {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
 }
 
-.contact-form {
+#form-content {
+    overflow: hidden;
+    padding-right: 25%;
+    padding-left: 25%;
+}
+
+/* Style to center the map on the webpage */
+.map-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
 }
 
-.contact-form input {
-    margin:5px;
-    width:500px;
-    padding: 10px;
-    border-radius: 0;
-    border-style: solid;
-    outline-style: hidden;
+.map-container iframe {
+    width: 80%;
+    height: 70%;
+}
+
+.bar-selection {
+    display: flex;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.bar-selection li {
+    width: 50%;
+}
+
+.bar-selection li:hover {
+    background-color: aquamarine;
+}
+
+.bar-selection li p {
+    text-align: center;
+}
+
+.bar-selection li.active {
+    background-color: #ccc;
+}
+
+.bar-selection li:hover {
+    background-color: #ddd;
+}
+
+.address {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.address li {
+    flex: max(300px, 100%/3 - 50px);
+    padding-right: 20px;
+    padding-bottom: 10px;
+    width: 30%;
 }
