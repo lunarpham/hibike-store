@@ -1,10 +1,14 @@
 function showForm() {
     document.getElementById("form-content").style.display = "flex";
+    document.getElementById("form-button").style.backgroundColor = "rgb(62, 165, 255)";
+    document.getElementById("location-button").style.backgroundColor = "#e1a74ad7";
     document.getElementById("location-content").style.display = "none";
 }
 
 function showMap() {
     document.getElementById("location-content").style.display = "block";
+    document.getElementById("location-button").style.backgroundColor = "rgb(62, 165, 255)";
+    document.getElementById("form-button").style.backgroundColor = "#e1a74ad7";
     document.getElementById("form-content").style.display = "none";
 }
 

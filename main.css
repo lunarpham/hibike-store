@@ -687,7 +687,7 @@ footer a h3 {
     width: 50%;
 }
 
-.tab-container:hover,.tab-container:active {
+.tab-container:hover {
     background-color:rgb(62, 165, 255);
 }
 
