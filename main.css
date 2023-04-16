@@ -557,6 +557,21 @@ nav ul {
     background-color: darkgrey;
 }
 
+.events-label {
+    display: flex;
+    justify-content: center;
+}
+
+.event-banner {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.event-banner img {
+    width: 80%;
+}
+
 /*----------NEW SECTION-----------*/
 /*Responsive footer*/
 footer {
