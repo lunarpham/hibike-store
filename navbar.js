@@ -1,4 +1,3 @@
-
 //Move navbar content to right when scrolling
 window.onscroll = function() {scrollFunction()};
 
@@ -13,7 +12,7 @@ function scrollFunction() {
 }
 
 
-//Keep navbar and header in every page using jQuery
+//Keep navbar and header in every page
 $(function(){
   $("#header").load("components/header.html");
   $("#navbar").load("components/navbar.html");

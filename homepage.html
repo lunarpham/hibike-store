@@ -1,78 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hibike Official Store</title>
     <link rel="icon" href="logo/logo-white.svg">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="featured.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="navbar.js"></script>
-    <script src="dropdown.js"></script>
 </head>
+
 <body>
+    <!--HEADER AND NAVBAR-->
     <div class="header" id="header"></div>
     <nav id="navbar"></nav>
-    
+
+    <!--REVEAL BLOCK EFFECT-->
     <div class="rev-block" id="rev-block2"></div>
     <div class="rev-block" id="rev-block1"></div>
-    
+
+    <!--TOP SLIDESHOW-->
     <div id="carousel">
         <div class="image-container">
 
-
-            <div class="slide-image" id="slide-1"> <!--Euphonium!-->
+            <!--Euphonium!-->
+            <div class="slide-image" id="slide-1"> 
                 <div class="text-on-image">
                     <h1>THE WAY YOU SOUND IT - HIBIKE!</h1>
-                    <button class="about-us-button"><a class="what-does-it-mean" href="aboutus.html"><h1>WHAT DOES IT MEAN?</h1></a></button>
-                </div>
-            </div>
-            <div class="slide-image" id="slide-2"> <!--K-On!-->
-                <div class="text-on-image">
-                    <h1>THE WAY YOU SOUND IT - HIBIKE!</h1>
-                    <button class="about-us-button"><a class="what-does-it-mean" href="aboutus.html"><h1>WHAT DOES IT MEAN?</h1></a></button>
-                </div>
-            </div>
-            <div class="slide-image" id="slide-3"> <!--Bocchi The Rock!-->
-                <div class="text-on-image">
-                    <h1>THE WAY YOU SOUND IT - HIBIKE!</h1>
-                    <button class="about-us-button"><a class="what-does-it-mean" href="aboutus.html"><h1>WHAT DOES IT MEAN?</h1></a></button>
+                    <button class="about-us-button">
+                        <a class="what-does-it-mean" href="aboutus.html#what-does-it-mean">
+                            <h1>WHAT DOES IT MEAN?</h1>
+                        </a>
+                    </button>
                 </div>
             </div>
 
-            <!--<a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>!-->
+            <!--K-On!-->
+            <div class="slide-image" id="slide-2"> 
+                <div class="text-on-image">
+                    <h1>THE WAY YOU SOUND IT - HIBIKE!</h1>
+                    <button class="about-us-button">
+                        <a class="what-does-it-mean" href="aboutus.html#what-does-it-mean">
+                            <h1>WHAT DOES IT MEAN?</h1>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <!--Bocchi The Rock!-->
+            <div class="slide-image" id="slide-3"> 
+                <div class="text-on-image">
+                    <h1>THE WAY YOU SOUND IT - HIBIKE!</h1>
+                    <button class="about-us-button">
+                        <a class="what-does-it-mean" href="aboutus.html#what-does-it-mean">
+                            <h1>WHAT DOES IT MEAN?</h1>
+                        </a>
+                    </button>
+                </div>
+            </div>
 
             <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-              
-    </div> 
-
-    <div class="sponsors">
-        <div class="logo-sponsors-container">
-            <img class="logo-sponsors" id="yamaha" src="sponsors logo/svg/yamaha_white.svg">
-            <img class="logo-sponsors" id="epiphone" src="sponsors logo/svg/epiphone_white.svg">
-            <img class="logo-sponsors" id="steinberg" src="sponsors logo/svg/steinberg_white.svg">
-            <img class="logo-sponsors" id="marshall" src="sponsors logo/svg/marshall_white.svg">
 
         </div>
-        <div class="description">
-            <br><h2>Hibike is the leading musical instrument reseller in S.E.A and Hong Kong/Taiwan with more than 18 stores in 13 countries/regions.
-            <h2>We stock a high-quality range of modern Musical Instruments and Accessories from all your favorite music anime titles.</h2>
-            <h2>Our products are all covered in our warranty program.</h2>
+
+        <!--SPONSORS LOGO AND INTRODUCTION ABOUT US-->
+        <div class="sponsors">
+            <div class="logo-sponsors-container">
+                <img class="logo-sponsors" id="yamaha" src="sponsors logo/svg/yamaha_white.svg">
+                <img class="logo-sponsors" id="epiphone" src="sponsors logo/svg/epiphone_white.svg">
+                <img class="logo-sponsors" id="steinberg" src="sponsors logo/svg/steinberg_white.svg">
+                <img class="logo-sponsors" id="marshall" src="sponsors logo/svg/marshall_white.svg">
+
+            </div>
+            <div class="description">
+                <br>
+                <h2>Hibike is the leading musical instrument reseller in S.E.A and Hong Kong/Taiwan with more than 10
+                    stores in 7 countries/regions.
+                </h2>    
+                <h2>We stock a high-quality range of modern Musical Instruments and Accessories from all your
+                    favorite music anime titles.
+                </h2>
+                <h2>Our products are all covered in our warranty program.
+                    
+                </h2>
+            </div>
         </div>
     </div>
-    </div> 
-    
 
+    <!--ALL OUR PRODUCT CATEGORIES-->
     <div class="products">
         <div class="products-label">
             <div class="label-container">
@@ -81,66 +105,117 @@
         </div>
         <div class="products-category">
             <div class="products-items">
+                <!--SHOW CATEGORIES-->
                 <div class="row" id="row">
-                    <div class="parent"><div class="product-container" id="guitars"><a href="products.html#guitars"><h1>Guitars, Basses, Amps</h1></a></div></div>
-                    <div class="parent"><div class="product-container" id="drums"><a href="products.html#drums"><h1>Drums</h2></a></div></div>
-                    <div class="parent"><div class="product-container" id="keyboards"><a href="products.html#keyboards"><h1>Keyboards</h1></a></div></div>
-                    <div class="parent"><div class="product-container" id="pianos"><a href="products.html#pianos"><h1>Pianos</h1></a></div></div>
-                    <div class="parent"><div class="product-container" id="strings"><a href="products.html#strings"><h1>Strings</h1></a></div></div>
-                    <div class="parent"><div class="product-container" id="winds"><a href="products.html#winds"><h1>Winds</h1></a></div></div>
+                    <div class="parent">
+                        <div class="product-container" id="guitars">
+                            <a href="products.html#guitars">
+                                <h1>Guitars, Basses, Amps</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="parent">
+                        <div class="product-container" id="drums">
+                            <a href="products.html#drums">
+                                <h1>Drums</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="parent">
+                        <div class="product-container" id="keyboards">
+                            <a href="products.html#keyboards">
+                                <h1>Keyboards</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="parent">
+                        <div class="product-container" id="pianos">
+                            <a href="products.html#pianos">
+                                <h1>Pianos</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="parent">
+                        <div class="product-container" id="strings">
+                            <a href="products.html#strings">
+                                <h1>Strings</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="parent">
+                        <div class="product-container" id="winds">
+                            <a href="products.html#winds">
+                                <h1>Winds</h1>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!--FEATURING PRODUCTS FROM ANIME-->
     <div class="featuring">
         <div class="products-label">
             <div class="label-container">
                 <h1>-FEATURING PRODUCTS FROM YOUR FAVOURITE ANIME-</h1>
             </div>
         </div>
+
+        <!--BLAH BLAH PARAGRAPH-->
         <span class="product-intro">
             <figure><img src="banner/banner.png" alt=""></figure>
-         
-            <p><h2>Hibike is place where you can find musical instruments from your favorite anime titles.
-            Some of the best loved anime series have revolved around musical performance,
-            but have any of them ever made you want to learn to play an instrument yourself? 
-            In honor of musical instrument day in 2023, Hibike Store held an annual survey to find out
-            which instruments fans most wished they could play after seeing anime
-            heroines having so much fun. Things seem to be exciting that this year's result is significantly
-            different from last year that gave us and our customer big surprises of how it changed across time.
-            Let's dig in to find out which instrument your beloved characters is playing. The below slideshow will
-            present our top 3 anime musical instruments this year.
-        </h2></p>
-
-            </span>
+            <p>
+                <h2 class="intro-text">Hibike is place where you can find musical instruments from your favorite anime
+                    titles.
+                    Some of the best loved anime series have revolved around musical performance,
+                    but have any of them ever made you want to learn to play an instrument yourself?
+                    In honor of musical instrument day in 2023, Hibike Store held an annual survey to find out
+                    which instruments fans most wished they could play after seeing anime
+                    heroines having so much fun. Things seem to be exciting that this year's result is significantly
+                    different from last year that gave us and our customer big surprises of how it changed across time.
+                    Let's dig in to find out which instrument your beloved characters is playing. The below slideshow will
+                    present our top 3 anime musical instruments this year.
+                </h2>
+            </p>
+        </span>
+        <!--SLIDESHOW-->
         <div class="featuring-products">
+            <!--THUMBNAILS-->
             <div style="text-align:center">
-                <span class="char-dot" onclick="currentSlide2(1)"><img src="thumbnails/bocchi.png" alt=""></span> 
-                <span class="char-dot" onclick="currentSlide2(2)"><img src="thumbnails/yui.png" alt=""></span> 
-                <span class="char-dot" onclick="currentSlide2(3)"><img src="thumbnails/kumiko.png" alt=""></span> 
+                <span class="char-dot" onclick="currentSlide2(1)"><img src="thumbnails/bocchi.png" alt=""></span>
+                <span class="char-dot" onclick="currentSlide2(2)"><img src="thumbnails/yui.png" alt=""></span>
+                <span class="char-dot" onclick="currentSlide2(3)"><img src="thumbnails/kumiko.png" alt=""></span>
             </div>
+            <!--SLIDESHOW MAIN -BOCCHI- -->
             <div class="anime-products" id="bocchi">
                 <div class="character-image">
                     <img src="featured/bocchi-3.png" alt="">
                 </div>
+                <!--INSTRUMENT INFORMATION -->
                 <div class="detail-box">
-                    <div class="label-container"><h2 class="instrument-type">#1 Electric Guitar</h2></div>
+                    <div class="label-container">
+                        <h2 class="instrument-type">#1 Electric Guitar</h2>
+                    </div>
                     <h1 class="instrument-title">YAMAHA PACIFICA series</h1>
-                    <p><h2>
-                    The most favorite one is an Electric Guitar used by Hitori "Bocchi" Gotoh (Kessoku Band)
-                    from TV series anime "Bocchi The Rock!" (Onair 2022).
-                    This is a high quality model for a wide range of genres, generously infused with ideas 
-                    and technologies developed over 50 years of Yamaha guitar history.
-                    Bocchi uses a PAC600series PACIFICA611VFM model that has been custom-made and customized.
-                    Her previous guitar is a Gibson Les Paul borrowing from her father.
-                    However, its first string was broken during the performance in her school's festival.
-                    After the incident, she decided to buy a new guitar to avoid causing any trouble like that
-                    to her father's guitar.
-                    </h2>
+                    <p>
+                        <h2>
+                        The most favorite one is an Electric Guitar used by Hitori "Bocchi" Gotoh (Kessoku Band)
+                        from TV series anime "Bocchi The Rock!" (Onair 2022).
+                        This is a high quality model for a wide range of genres, generously infused with ideas
+                        and technologies developed over 50 years of Yamaha guitar history.
+                        Bocchi uses a PAC600series PACIFICA611VFM model that has been custom-made and customized.
+                        Her previous guitar is a Gibson Les Paul borrowing from her father.
+                        However, its first string was broken during the performance in her school's festival.
+                        After the incident, she decided to buy a new guitar to avoid causing any trouble like that
+                        to her father's guitar.
+                        </h2>
                     </p>
-                    <div class="label-container"><h2>Recommended Products</h2></div>
-                    
+                    <!--RECOMMENDED PRODUCTS -->
+                    <div class="label-container">
+                        <h2>Recommended Products</h2>
+                    </div>
+
                     <ul class="product-images">
                         <li class="recomment-products">
                             <a class="product-box" id="pac600" href="products.html">
@@ -169,29 +244,39 @@
                     </ul>
                 </div>
             </div>
+
+            <!--SLIDESHOW MAIN -YUI- -->
             <div class="anime-products" id="yui">
                 <div class="character-image">
                     <img src="featured/yui-3.png" alt="">
                 </div>
+                <!--INSTRUMENT INFORMATION -->
                 <div class="detail-box">
-                    <div class="label-container"><h2 class="instrument-type">#2 Electric Guitar</h2></div>
+                    <div class="label-container">
+                        <h2 class="instrument-type">#2 Electric Guitar</h2>
+                    </div>
                     <h1 class="instrument-title">Gibson Pre-'08 Les Paul Standard</h1>
-                    <p><h2>
-                        The second one is a Gibson Pre-'08 Les Paul Standard '50s in Heritage Cherry Sunburst
-                        used by Yui Hirasawa in "K-On!" series.
-                        She names it Giita, which quite literally means "guitar". In 2008, Gibson gave the
-                        "Standard" name to a new design of Les Paul, while the old Standard was renamed
-                        the Traditional; worth noting because the manga started in 2007. She uses D'Addario
-                        EXL145 strings on it, oddly heavy strings for her and the music she plays. Of course,
-                        being Yui, she likely has no idea there are different sizes of strings, as she didn't
-                        even know they had to be changed at first. In the manga, its pickup selector switch is
-                        always set to the "Treble" position, which is usually well suited for lead guitar. In the anime, it's always set to the middle
-                        position, which uses both pickups, giving a more full sound, well suited for the low,
-                        Power Chord-heavy riffs Yui tends to play.
-                    </h2>
+                    <p>
+                        <h2>
+                            The second one is a Gibson Pre-'08 Les Paul Standard '50s in Heritage Cherry Sunburst
+                            used by Yui Hirasawa in "K-On!" series.
+                            She names it Giita, which quite literally means "guitar". In 2008, Gibson gave the
+                            "Standard" name to a new design of Les Paul, while the old Standard was renamed
+                            the Traditional; worth noting because the manga started in 2007. She uses D'Addario
+                            EXL145 strings on it, oddly heavy strings for her and the music she plays. Of course,
+                            being Yui, she likely has no idea there are different sizes of strings, as she didn't
+                            even know they had to be changed at first. In the manga, its pickup selector switch is
+                            always set to the "Treble" position, which is usually well suited for lead guitar. In the anime,
+                            it's always set to the middle
+                            position, which uses both pickups, giving a more full sound, well suited for the low,
+                            Power Chord-heavy riffs Yui tends to play.
+                        </h2>
                     </p>
-                    <div class="label-container"><h2>Recommended Products</h2></div>
-                    
+                    <!--RECOMMENDED PRODUCTS -->
+                    <div class="label-container">
+                        <h2>Recommended Products</h2>
+                    </div>
+
                     <ul class="product-images">
                         <li class="recomment-products">
                             <a class="product-box" id="lpclassic" href="products.html">
@@ -224,22 +309,36 @@
                 <div class="character-image">
                     <img src="featured/kumiko-3.png" alt="">
                 </div>
+                <!--INSTRUMENT INFORMATION -->
                 <div class="detail-box">
-                    <div class="label-container"><h2 class="instrument-type">#3 Euphonium</h2></div>
+                    <div class="label-container">
+                        <h2 class="instrument-type">#3 Euphonium</h2>
+                    </div>
                     <h1 class="instrument-title">YAMAHA YEP-621</h1>
-                    <p><h2>
-                        The third one is YAMAHA YEP-621 - an Euphonium played by main character of anime Sound! Euphonium (Onair 2015), Kumiko Oumae.
-                        Euphonium is a member of the brass family and the titular instrument of Sound! Euphonium. In addition, the anime title is inspiration
-                        of our store name (Hibike! Euphonium) since it's our favorite music anime in 2010s after K-On! series.
-                        The euphonium is used in symphonies, orchestras, school bands, and marching bands. It can be played in either bass or treble clef,
-                        with the bass clef written in concert pitch as a C instrument, and the treble clef being written in B♭ sounding a major ninth,
-                        which is an octave plus a whole step, lower than written. This change in clef does not affect the way the instrument sounds,
-                        it is simply different between sheet music. It is a non-transposing instrument known for its distinctive tone color,
-                        wide range, a variety of character and agility.
-                    </h2>
+                    <p>
+                        <h2>
+                            The third one is YAMAHA YEP-621 - an Euphonium played by main character of anime Sound!
+                            Euphonium (Onair 2015), Kumiko Oumae.
+                            Euphonium is a member of the brass family and the titular instrument of Sound! Euphonium. In
+                            addition, the anime title is inspiration
+                            of our store name (Hibike! Euphonium) since it's our favorite music anime in 2010s after K-On!
+                            series.
+                            The euphonium is used in symphonies, orchestras, school bands, and marching bands. It can be
+                            played in either bass or treble clef,
+                            with the bass clef written in concert pitch as a C instrument, and the treble clef being written
+                            in B♭ sounding a major ninth,
+                            which is an octave plus a whole step, lower than written. This change in clef does not affect
+                            the way the instrument sounds,
+                            it is simply different between sheet music. It is a non-transposing instrument known for its
+                            distinctive tone color,
+                            wide range, a variety of character and agility.
+                        </h2>
                     </p>
-                    <div class="label-container"><h2>Recommended Products</h2></div>
-                    
+                    <!--RECOMMENDED PRODUCTS -->
+                    <div class="label-container">
+                        <h2>Recommended Products</h2>
+                    </div>
+
                     <ul class="product-images">
                         <li class="recomment-products">
                             <a class="product-box" id="yep621" href="products.html">
@@ -267,17 +366,18 @@
                         </li>
                     </ul>
                 </div>
-                    
+            
+                <!--BUTTON TO SWITCH SLIDE-->
             </div>
-                <a class="char-prev" onclick="plusSlides2(-1)">❮</a>
-                <a class="char-next" onclick="plusSlides2(1)">❯</a>
-            </div>
-            <br>
+            <a class="char-prev" onclick="plusSlides2(-1)">❮</a>
+            <a class="char-next" onclick="plusSlides2(1)">❯</a>
         </div>
+        <br>
     </div>
-    
+    </div>
+
     <script src="slideshow.js"></script>
-    <script src="featured.js"></script>
 </body>
 <footer></footer>
+
 </html>
